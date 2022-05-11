@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install gtest manually
+      run: git clone https://github.com/google/googletest && cd googletest && mkdir build && cd build && cmake .. && make && make install
     - uses: actions/checkout@v3
     - name: make
       run: cd unittest;make
