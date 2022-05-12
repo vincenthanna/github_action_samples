@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install libraries
+      run: sudo apt-get install libpthread-stubs0-dev
     - name: Install gtest manually
       run: git clone https://github.com/google/googletest && cd googletest && mkdir build && cd build && cmake .. && make && sudo make install
     - uses: actions/checkout@v3
