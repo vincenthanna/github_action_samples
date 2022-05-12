@@ -28,7 +28,7 @@ SRCS:= $(filter-out unittest.cpp, $(SRCS))
 INCS:= $(wildcard *.h)
 
 CFLAGS+= -Wall -std=c++14 \
-	 -I /opt/local/include
+	 -I /opt/local/include \
 	 -I /usr/local/include
 
 LIBS := -L/opt/local/lib -lgtest -lpthread
