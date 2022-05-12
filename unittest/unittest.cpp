@@ -38,7 +38,8 @@ TEST_F(MyTest, test1) {
 }
 
 TEST_F(MyTest, remove_duplicate_test_2) {
-    EXPECT_EQ(2, 2);
+    int v = 5;
+    EXPECT_EQ(2, 5);
 }
 
 int main(int argc, char **argv) {
